@@ -174,7 +174,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
   /* line 127, ../sass/_media.scss */
   .slider .swiper-slide .slide-desc .content-desc {
-    left: 16% !important;
+    left: 10% !important;
   }
 
   /* line 135, ../sass/_media.scss */
@@ -212,6 +212,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* line 161, ../sass/_media.scss */
   .madchen .swiper-container-desctop .swiper-slide .description-list li .item-name {
     font-weight: 600;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 175, ../sass/_media.scss */
+  .slider .swiper-slide img {
+    margin-right: 0 !important;
+  }
+  /* line 179, ../sass/_media.scss */
+  .slider .swiper-slide .slide-desc .content-desc {
+    left: 40% !important;
   }
 }
 @font-face {
@@ -526,7 +536,7 @@ input:checked + #info-mobile {
   position: absolute;
   bottom: 0;
   text-align: center;
-  width: 100%;
+  width: 50%;
   height: 100%;
   display: inline-block;
   background-image: linear-gradient(to right, white 0%, transparent 100%);

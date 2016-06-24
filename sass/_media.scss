@@ -125,7 +125,7 @@
 		    }
 			.slide-desc {
 				.content-desc {
-				    left: 16% !important;
+				    left: 10% !important;
 				}
 			}
 		} 
@@ -166,4 +166,20 @@
 			}
 		}
 	}
+}
+@media (min-width: 1200px) {
+
+	.slider {
+		.swiper-slide {
+
+			img {
+				margin-right: 0 !important;
+		    }
+			.slide-desc {
+				.content-desc {
+				    left: 40% !important;
+				}
+			}
+		} 
+	}	
 }
