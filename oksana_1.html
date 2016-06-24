@@ -533,41 +533,5 @@
 	        autoplayDisableOnInteraction: false
 	    });
     </script>
-	<script>
-		 $(function () {
-	        $('.hidden-menu li a').each(function () {
-	            var location = window.location.href;
-	            var link = this.href;
-	            var result = location.match(link);
-	            if(result) {
-	            $(this).addClass('active');
-	            }
-	        });
-	    });
-	</script>
-	<script>
-		$(function () {
-	        $('.list-menu li a').each(function () {
-	            var location = window.location.href;
-	            var link = this.href;
-	            var result = location.match(link);
-	            if(result) {
-	            $(this).addClass('list-active');
-	            }
-	        });
-	    });
-	</script>
-	<script>
-		$(function () {
-	        $('.footer-main-menu li a').each(function () {
-	            var location = window.location.href;
-	            var link = this.href;
-	            var result = location.match(link);
-	            if(result) {
-	            $(this).addClass('active-footer');
-	            }
-	        });
-	    });
-	</script>
 </body>
 </html>
