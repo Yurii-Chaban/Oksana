@@ -1,0 +1,169 @@
+@mixin transition {
+	-webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+
+	header {
+		padding: 19px 0 17px;
+		.dropdovn-menu {
+			display: none !important;
+		}
+
+		/*logo*/
+		.logo {
+		  width: 116px !important;
+		  // overflow: hidden;
+		  // margin: 0 auto;
+		  float: left;
+		  // text-align: center;
+
+		  img {
+		  	max-width: 100%;
+		  	height: auto;
+		  }
+		}
+		.logo-info,
+		.right-block {
+			display: block !important;
+		}
+		.header-info,
+		.call-us-block {
+		  display: none !important;
+		}
+
+		.logo-info {
+			float: left;
+			width: 290px;
+			margin-left: 16px;
+
+			.logo-title {
+				color: #d72828;
+				font: 400 72px / 60px 'Assassin$', sans-serif;
+				text-transform: uppercase;
+				border-bottom: 3px solid #050505;
+			}
+			.logo-sign {
+				margin-top: 11px;
+				text-shadow: 0 0 5px rgba(0, 0, 0, 0.09);
+				color: #020202;
+				text-align: center;
+				font: 400 22px / 20px 'Assassin$', sans-serif;
+				text-transform: uppercase;
+
+				span {
+					display: block;
+					margin-top: 10px;
+					color: black;
+					font: 400 11px / 12px 'Raleway', sans-serif;
+					text-transform: lowercase;
+				}
+			}
+		}
+		.right-block {
+			float: right;
+
+			.desctop-phone {
+				img {
+					float: left;
+					margin-right: 10px;
+				}
+
+				span {
+					color: #d72828;
+					font-size: 20px;
+					font-weight: 600;
+					line-height: 20px;
+				}
+			}
+			.registrieren-button {
+				clear: both;
+				display: block;
+				width: 198px;
+				height: 47px;
+				margin-top: 23px;
+				text-align: center;
+			    color: #010101;
+			    font-size: 15px;
+			    font-weight: 400;
+			    line-height: 47px;
+			    text-transform: uppercase;
+			    border: 1px solid #000;
+			    text-decoration: none;
+			    cursor: pointer;
+			}
+		}
+	}
+
+    .slider {
+		.swiper-slide {
+
+			img {
+				margin-right: 0 !important;
+		    }
+			.slide-desc {
+				.content-desc {
+				    top: 30%;
+				    left: 5% !important;
+				}
+			}
+		} 
+	}
+
+}
+
+@media (min-width: 1024px) {
+
+	.slider {
+		.swiper-slide {
+
+			img {
+				margin-right: 0 !important;
+		    }
+			.slide-desc {
+				.content-desc {
+				    left: 16% !important;
+				}
+			}
+		} 
+	}	
+
+	.madchen {
+		.swiper-container-mobile {
+			display: none !important;
+		}
+		.swiper-container-desctop {
+			display: block !important;
+
+			.swiper-slide {
+				.description-list {
+					width: 176px;
+					margin: 0 auto;
+					text-align: center;
+					li {
+						display: block;
+						margin: 5px 0;
+						text-align: left;
+						&:first-child {
+							margin-top: 0;
+						}
+
+						.item-title,
+						.iten-sign {
+							color: black;
+							font-size: 15px;
+							line-height: 18px;
+							font-weight: 400;
+						}
+						.item-name {
+							font-weight: 600;
+						}
+					}
+				}
+			}
+		}
+	}
+}
